@@ -53,3 +53,33 @@ HU03
  Como operador da central,
  quero ser notificado quando um sensor falhar,
  para agir rapidamente.
+
+### Codigo
+
+import tkinter as tk
+import random
+
+# ======================
+# CONFIGURAÇÕES
+# ======================
+TEMPO_VERDE_PADRAO = 3000
+TEMPO_VERDE_ESTENDIDO = 6000
+TEMPO_AMARELO_PADRAO = 1500
+TEMPO_AMARELO_CHUVA = 3000
+FLUXO_ALTO_LIMITE = 20
+
+# ======================
+# SIMULAÇÃO DOS SENSORES
+# ======================
+
+def ler_fluxo():
+    return random.randint(0, 30)
+
+def ler_chuva():
+    return random.choice(["nenhuma", "fraca", "forte"])
+
+def sensor_funcionando():
+    return random.choice([True, True, True, False])
+
+def servidor_disponivel():
+    return random.choice([True, True, False])
