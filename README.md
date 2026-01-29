@@ -83,3 +83,5 @@ def sensor_funcionando():
 
 def servidor_disponivel():
     return random.choice([True, True, False])
+
+### Fluxograma    
