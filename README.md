@@ -59,18 +59,18 @@ HU03
 import tkinter as tk
 import random
 
-# ======================
-# CONFIGURAÇÕES
-# ======================
+======================
+CONFIGURAÇÕES
+======================
 TEMPO_VERDE_PADRAO = 3000
 TEMPO_VERDE_ESTENDIDO = 6000
 TEMPO_AMARELO_PADRAO = 1500
 TEMPO_AMARELO_CHUVA = 3000
 FLUXO_ALTO_LIMITE = 20
 
-# ======================
-# SIMULAÇÃO DOS SENSORES
-# ======================
+======================
+SIMULAÇÃO DOS SENSORES
+======================
 
 def ler_fluxo():
     return random.randint(0, 30)
